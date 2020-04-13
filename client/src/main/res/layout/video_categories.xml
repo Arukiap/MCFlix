@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ProgressBar
+            android:id="@+id/categoryProgressBar"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:indeterminateTint="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/category_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="@string/video_categories_title"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/categories_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_title"
+        app:layout_constraintTop_toBottomOf="@+id/category_title">
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>
