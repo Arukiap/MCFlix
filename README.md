@@ -3,7 +3,7 @@
 MCFlix is a full-stack application that is divided into two main architecture components: the **client** and the **public cloud**.
 
 <p align="center">
-<img src="public/architecture.png" width="800"/>
+<img src="public/architecture.PNG" width="800"/>
 </p>
 
 ## Server - [Application server, Nginx, Cassandra DB]
